@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+.container-header {
     width: 80%;
     margin: 0 auto;
 }
@@ -33,7 +33,7 @@ main {
     padding: 20px 10px;
 }
 
-#container-card {
+#container {
     width: 90%;
     height: 90%;
     margin: 0px auto;
@@ -62,4 +62,5 @@ main {
 
 i {
     font-size: 26px;
+    margin-bottom: 10px;
 }
