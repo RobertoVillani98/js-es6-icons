@@ -17,11 +17,17 @@ const card = [
 	{name: 'user-secret', prefix: 'fa-', type: 'user', family: 'fas', color: 'blue'}
 ];
 
-costruzioneCard();
+costruzioneCard(card);
+//attribusice la funzione filterElements al change della select
+document.getElementById("icons-filter").onchange = filterElements;
 
-function costruzioneCard() {
-	for (let i = 0; i < card.length; i++) {
-		addCard(card[i])
+
+
+
+function costruzioneCard(arr) {
+    //TODO: use for each
+	for (let i = 0; i < arr.length; i++) {
+		addCard(arr[i])
 	}
 }
 
@@ -35,3 +41,21 @@ function addCard(iCard) {
         </div> 
 		`
 }
+
+function filterElements (){
+    //pulisce l'inner html
+    const container = document.getElementById('container');
+	container.innerHTML = "";
+    //prende il valore dalla select
+    let value = this.value;
+	
+    
+    // console.log("value ---------> ",value);
+    
+    //filtra gli elementi selezionati in base al tipo scelto e li mette nell'arrray
+    let newCardArr = card.filter((item)=> item.type===value);
+    //fa vedere i nuovi elementi filtrati
+    costruzioneCard(newCardArr);
+}
+
+

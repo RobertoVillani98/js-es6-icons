@@ -20,6 +20,11 @@ header {
     width: 100%;
     padding: 20px 0;
 }
+
+h1{
+    color: #0bf;
+    font-size: 40px;
+}
 /* main */
 main {
     background: #ddd;
@@ -34,8 +39,8 @@ main {
 }
 
 #container {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     margin: 0px auto;
     display: flex;
     justify-content: center;
