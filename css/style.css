@@ -1,0 +1,65 @@
+/* commons */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+/* main */
+main {
+    background: #ddd;
+}
+#main-header {
+    background: #0bf;
+}
+#main-header label {
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 10px;
+}
+
+#container-card {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 15px;
+}
+
+
+.card span {
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 26px;
+}
